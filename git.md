@@ -5,6 +5,8 @@ title: "git指令筆記"
 tags: ["git"]
 ---
 
+純粹筆記
+
 ## git筆記
 ### git push
 * 將commit的內容推上遠端repo
@@ -46,6 +48,7 @@ git pull [remote] [branch]
 * \[path\]: 增加檔案或目錄到stage
 * -u: 不處理untracked的檔案
 * -A / . :不管tracked或是untracked的檔案都加到stage上
+* --patch | -p: 選取內容加到stage
 
 ### git commit (staged)
 提交加到stage的檔案
@@ -59,6 +62,7 @@ git pull [remote] [branch]
 ### git checkout
 * \[branch name\]: 切換branch
 * \[filename\]: 還原本地端修改的檔案內容
+* \[hash\]: 切換到特定commit
 
 ### git merge
 合併branch
@@ -90,6 +94,7 @@ git pull [remote] [branch]
 ### git reset
 * --mixed: 還原已經add至stage的檔案，仍保存修改 (default)
 * --hard: 還原已經add至stage的檔案，並捨棄之前的修改
+* --hard \[hash\]: 還原到特定commit
 
 ### git revert
 ```bash
@@ -129,6 +134,7 @@ brew install tig
 * drop: 移除stash上的項目，並可指定stash，如：```git stash drop stash@{0}```
 * stash show -p stash@{0}: 查看已儲存的stash@{0}和目前本地repo的diff
   * ```git stash show -p stash@{0}``` 等同於 ```git show stash@{0}```
+* clear: 清掉所有暫存的stash
 
 ### git apply
 使用補丁(patch)。前置作業：
