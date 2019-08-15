@@ -174,3 +174,6 @@ brew install tig
 砍掉untracked files 
 * -n : 預覽即將被砍掉的檔案清單
 * -f : 執行砍檔
+
+> reference: https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1
+
