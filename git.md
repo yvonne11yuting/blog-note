@@ -167,4 +167,10 @@ brew install tig
 * 可使用git reset --hard \[tag name\] 和 git checkout \[tag name\]結合使用，將專案回復至先前commit的版本
 > reference: [Git配合Tag的代码回滚](http://www.cnblogs.com/zqzjs/p/6812214.html)
 
+* t: 對選中的commit按**t**進入tree view，可以查看當時repo的內容
 
+
+### git clean
+砍掉untracked files 
+* -n : 預覽即將被砍掉的檔案清單
+* -f : 執行砍檔
