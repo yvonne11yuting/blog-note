@@ -26,8 +26,8 @@
     * n<Enter>: 游標向下移動n列
     * shift+4: 游標移到該列的最後字元
     * shift+6: 游標移到該列的最前面的字元
-    * w/e: 向前移動一個word
-    * b: 向後移動一個word
+    * w/W/e/E: 向後移動一個word (w: 移到字首; e: 移到字尾(end of word))
+    * b/B: 向前移動一個word (back word)
   * 搜尋與取代
     * /word: 游標之下尋找[word]字串
     * ?word: 游標之上尋找[word]字串
@@ -43,6 +43,7 @@
     * nx: n為數字，nx即為向後刪除n個字元
     * dd: 刪除一整列，若前面加數字(n)，則為向下刪除n列
     * dw: 刪除一個字(不適用中文)
+    * daw: delete a word
     * dG: 刪除到最底
     * yy: 複製游標所在的那一列，若前面加上數字(n)，則為向下複製n列
     * p/P: 將以複製的資料貼上。p為貼在游標的下一列；P為貼在游標的上一列
@@ -57,3 +58,25 @@
 * Insert(編輯)
   * 返回Normal Mode
     * ESC / Ctrl+[
+
+
+* :set rnu: 
+
+* f/t/F/T:
+  * ; next word
+  * , previous word
+* /[keyword]<Enter>
+  * n: Next
+  * N: 
+
+* {}: next/prev code block
+* shift + [^|$|%|#|*]
+
+* v: select
+* d: delete
+* y: copy
+* yyp: copy this line and past to next line
+* 
+* o/O: insert new line (up/down)
+* page up/down: shift + arrow up/arrow down
+
